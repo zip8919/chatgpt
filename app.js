@@ -334,12 +334,12 @@ function showSettings(ok = true) {
 }
 
 function setSettingInput(config) {
-  domainInput.placeholder = "http://gpt.zip8919.xyz"
+  domainInput.placeholder = "https://api.openai.com"
   maxTokensInput.placeholder = config.maxTokens
   systemPromptInput.placeholder = "You are a helpful assistant."
   temperatureInput.placeholder = config.temperature
 
-  apiKeyInput.value = "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"
+  apiKeyInput.value = config.apiKey
 
   if (!config.domain) {
     config.domain = domainInput.placeholder
